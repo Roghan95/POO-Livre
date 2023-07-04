@@ -51,8 +51,10 @@ class Auteur
 
     function afficherBibliographie()
     {
+        $resultat = "";
         foreach ($this->_livres as $value) {
-            echo $value->getTitre(), "(" . $value->getAnneeParution() . ")" . " : " . $value->getNombrePages() . " pages / " . $value->getPrix() . " € <br>";
+            $resultat .= $value->getTitre() . "(" . $value->getAnneeParution() . ")" . " : " . $value->getNombrePages() . " pages / " . $value->getPrix() . " € <br>";
         }
+        return $resultat;
     }
 }

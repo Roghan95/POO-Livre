@@ -13,4 +13,4 @@ $livre3 = new Livre("Le Fléau", 823, 1978, 14, $auteur1);
 $livre4 = new Livre("Shining", 447, 1977, 16, $auteur1);
 
 // Affichage de la bibliographie de l'auteur
-$auteur1->afficherBibliographie();
+echo $auteur1->afficherBibliographie();
